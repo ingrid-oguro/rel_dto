@@ -16,7 +16,7 @@ grafico_dispersao = alt.Chart(df_periodo).mark_circle(size=100).encode(
     alt.Y('Média Final',axis=alt.Axis(title='Nota', orient = "left") ),
     tooltip = ['NOME','RA'] ).interactive()
 
-st.altair_chart(grafico_dispersao, use_container_width=True)
+st.alt_chart(grafico_dispersao, use_container_width=True)
 
 
 
@@ -31,4 +31,4 @@ grafico_barra = alt.Chart(base_aluno).mark_bar().encode(
         ).properties(width=260, height=300).facet(
         column=alt.Column('CODPERLET:N', title = None),
         ).resolve_scale(x='independent')
-st.altair_chart(grafico_barra, use_container_width=True)
+st.alt_chart(grafico_barra, use_container_width=True)
