@@ -16,7 +16,7 @@ grafico_dispersao = alt.Chart(df_periodo).mark_circle(size=100).encode(
     alt.Y('Média Final',axis=alt.Axis(title='Nota', orient = "left") ),
     tooltip = ['NOME','RA'] ).interactive()
 
-st.alt_chart(grafico_dispersao, use_container_width=True)
+st.alt_chart(grafico_dispersao)
 
 
 
