@@ -1,7 +1,7 @@
 import pandas as pd
 import altair as alt
 import streamlit as st
-
+pip.main(["install", "openpyxl"])
 df1 = pd.read_excel('/content/drive/MyDrive/Relatórios_20222/Relatório turma de direito/base_disciplina.xlsx')
 df2 = pd.read_excel('/content/drive/MyDrive/Relatórios_20222/Relatório turma de direito/df_geral.xlsx')
 
