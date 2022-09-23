@@ -3,8 +3,8 @@ import altair as alt
 import streamlit as st
 import pip
 pip.main(["install", "openpyxl"])
-df1 = pd.read_excel('/content/drive/MyDrive/Relatórios_20222/Relatório turma de direito/base_disciplina.xlsx')
-df2 = pd.read_excel('/content/drive/MyDrive/Relatórios_20222/Relatório turma de direito/df_geral.xlsx')
+df1 = pd.read_excel('base_disciplina.xlsx')
+df2 = pd.read_excel('df_geral.xlsx')
 
 periodo = sorted(df1.CODPERLET.unique())
 periodo_selecionado = st.selectbox('Periodo',periodo)
