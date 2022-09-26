@@ -79,8 +79,7 @@ with colb2:
     st.write(" ")
     st.write(" ")
     st.write(" ")
-    st.write(" ")
-    st.write(" ")
+
     cod2 = 20212
     sem2 = base_aluno.query('CODPERLET == @cod2')
     c = alt.Chart(sem2).mark_bar().encode(
