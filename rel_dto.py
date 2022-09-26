@@ -10,7 +10,7 @@ st.set_page_config(**PAGE_CONFIG)
 
 
 #Base
-df1 = pd.read_excel('df_geral.xlsx')
+dfb = pd.read_excel('df_geral.xlsx')
 df1 = dfb.drop(dfb[dfb.CODPERLET == 20222].index)
 dfa = pd.read_excel('disciplina_dto.xlsx')
 df2 = dfa.drop(dfa[dfa.RA == 40456].index)
