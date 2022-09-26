@@ -101,6 +101,7 @@ with colb1:
     st.write(" ")
     st.write(" ")
     st.write(" ")
+    st.write(" ")
     cod3 = 20221
     sem3 = base_aluno.query('CODPERLET == @cod3')
 
