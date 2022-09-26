@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import altair as alt
 import streamlit as st
+import pip
+pip.main(["install", "openpyxl"])
 PAGE_CONFIG = {"page_title": "CIA - Centro de Inteligência do Apoio ao aluno", "page_icon": ":globe_with_meridians:", "layout": "wide"}
 st.set_page_config(**PAGE_CONFIG)
 
